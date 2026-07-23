@@ -1,8 +1,26 @@
 aid: aurora-therapeutics
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/aurora-therapeutics.png
 name: Aurora Therapeutics
-description: Aurora Therapeutics is a company surfaced as a portfolio company of menlo-ventures and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: Aurora Therapeutics is a CRISPR gene-editing biotechnology company based
+  in Cambridge, Massachusetts, developing scalable, personalized genetic medicines
+  for rare diseases. Founded by gene-editing pioneers including Nobel laureate Jennifer
+  Doudna and Fyodor Urnov and led by CEO Edward M. Kaye, the company uses an "umbrella"
+  approach that bundles multiple rare disease-causing mutations under a single regulatory
+  pathway, combining guide RNA design, AI-engineered editors, and delivery systems
+  to correct mutations at scale. Backed by Menlo Ventures, Aurora is profiled in the
+  API Evangelist network; as of this pass it publishes a corporate website and news
+  surface but no public API, developer portal, SDK, or other technical/developer surface.
 url: https://raw.githubusercontent.com/api-evangelist/aurora-therapeutics/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,9 +30,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Biotechnology
+- Gene Editing
+- CRISPR
+- Rare Disease
+- Personalized Medicine
+- Therapeutics
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +46,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/aurora-therapeutics-domain-security.yml
 - type: Website
-  url: https://auroratherapeutics.com
+  url: https://www.auroratherapeutics.com
+- type: Careers
+  url: https://www.auroratherapeutics.com/careers
+- type: News
+  url: https://www.auroratherapeutics.com/news
+- type: About
+  url: https://www.auroratherapeutics.com/about-us
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
